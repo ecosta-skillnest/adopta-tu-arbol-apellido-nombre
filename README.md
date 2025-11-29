@@ -15,3 +15,12 @@
 | **Gris muy claro** | `#EEEEEE` | ![#EEEEEE](https://placehold.co/15x15/eeeeee/eeeeee.png) |
 | **Blanco** | `#FFFFFF` | ![#FFFFFF](https://placehold.co/15x15/ffffff/ffffff.png) |
 | **Negro** | `#000000` | ![#000000](https://placehold.co/15x15/000000/000000.png) |
+
+## Fuentes recomendadas
+
+Algunas fuentes recomendadas (puede ser otra que se ajuste).
+
+* [Roboto](https://fonts.google.com/specimen/Roboto)
+* [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+* [Lato](https://fonts.google.com/specimen/Lato)
+* [Oswald](https://fonts.google.com/specimen/Oswald)
