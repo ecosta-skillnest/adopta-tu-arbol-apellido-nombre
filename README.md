@@ -24,3 +24,13 @@ Algunas fuentes recomendadas (puede ser otra que se ajuste).
 * [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 * [Lato](https://fonts.google.com/specimen/Lato)
 * [Oswald](https://fonts.google.com/specimen/Oswald)
+
+## Imágenes
+
+| Álamo | Fresno |
+|-------|--------|
+| <img src="./resources/images/alamo.jpg" height="220"> | <img src="./resources/images/fresno.jpg" height="220"> |
+
+| Jacaranda | Pino |
+|-----------|------|
+| <img src="./resources/images/jacaranda.jpg" height="220"> | <img src="./resources/images/pino.jpg" height="220"> |
