@@ -11,12 +11,158 @@
     <!-- Ícono del sitio -->
     <link rel="icon" href="static/images/icons/adopta-tu-arbol-32.png" type="image/png">
     <!-- Estilos CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
     <!-- Fuente utilizada -->
 </head>
 
 <body>
+    <!-- Cabececera superior -->
+    <header class="barra-superior">
+        <p>Tu plataforma favorita de adopción de árboles</p>
+    </header>
+
+    <!-- Encabezado principal -->
+    <header class="encabezado-principal">
+        <!-- Contenedor encabezado principal interno -->
+        <div class="contenedor encabezado-principal__interno">
+            <!-- Logo del sitio -->
+            <h1 class="logo">
+                <span class="logo__texto logo__texto--adopta">Adopta</span>
+                <span class="logo__texto logo__texto--tu">Tu</span>
+                <span class="logo__texto logo__texto--arbol">Árbol</span>
+            </h1>
+            <!-- Navegación acciones -->
+            <nav class="encabezado-principal__acciones">
+                <button class="boton boton--adoptar">Adoptar</button>
+                <button class="boton boton--donar">Donar</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal">
+        <!-- Contenedor principal -->
+        <div class="contenedor">
+            <section class="barra-filtros">
+                <!-- Texto de filtros -->
+                <h2 class="barra-filtros__texto">
+                    Mostrando: <span class="barra-filtros__categoria">Todos los Árboles</span>
+                </h2>
+                <!-- Formulario de filtros -->
+                <form class="barra-filtros__formulario">
+                    <select class="barra-filtros__selector" id="categoria" name="categoria">
+                        <option value="todos">Todos los Árboles</option>
+                        <option value="frutales">Árboles Frutales</option>
+                        <option value="ornamentales">Árboles Ornamentales</option>
+                        <option value="nativos">Árboles Nativos</option>
+                    </select>
+                </form>
+            </section>
+
+            <!-- Sección de tarjetas de árboles -->
+            <section class="seccion-arboles">
+                <!-- Tarjeta árbol 1 -->
+                <div class="tarjeta-arbol">
+                    <img src="static/images/alamo.jpg" alt="Álamo" class="tarjeta-arbol__imagen">
+                    <div class="tarjeta-arbol__contenido">
+                        <h3 class="tarjeta-arbol__titulo">Álamo</h3>
+                        <p class="tarjeta-arbol__descripcion">
+                            Árbol caducifolio, de hojas anchas y con largos pecíolos.
+                        </p>
+                    </div>
+                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
+                        Adoptar
+                    </button>
+                </div>
+                <!-- Tarjeta árbol 2 -->
+                <div class="tarjeta-arbol">
+                    <img src="static/images/fresno.jpg" alt="Fresno" class="tarjeta-arbol__imagen">
+                    <div class="tarjeta-arbol__contenido">
+                        <h3 class="tarjeta-arbol__titulo">Fresno</h3>
+                        <p class="tarjeta-arbol__descripcion">
+                            Árbol con tronco recto y cilíndrico, con amplia copa.
+                        </p>
+                    </div>
+                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
+                        Adoptar
+                    </button>
+                </div>
+                <!-- Tarjeta árbol 3 -->
+                <div class="tarjeta-arbol">
+                    <img src="static/images/pino.jpg" alt="Pino" class="tarjeta-arbol__imagen">
+                    <div class="tarjeta-arbol__contenido">
+                        <h3 class="tarjeta-arbol__titulo">Pino</h3>
+                        <p class="tarjeta-arbol__descripcion">
+                            Árbol de la familia de las abietáceas, de tronco elevado, recto.
+                        </p>
+                    </div>
+                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
+                        Adoptar
+                    </button>
+                </div>
+                <!-- Tarjeta árbol 4 -->
+                <div class="tarjeta-arbol">
+                    <img src="static/images/jacaranda.jpg" alt="Jacaranda" class="tarjeta-arbol__imagen">
+                    <div class="tarjeta-arbol__contenido">
+                        <h3 class="tarjeta-arbol__titulo">Jacaranda</h3>
+                        <p class="tarjeta-arbol__descripcion">
+                            Árbol de copa extendida y redondeada con flores moradas.
+                        </p>
+                    </div>
+                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
+                        Adoptar
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <!-- Contenedor pie de página -->
+        <div class="contenedor pie-pagina__interno">
+            <!-- Sección pie de página de la dirección -->
+            <section class="seccion-pie">
+                <h4 class="seccion-pie__titulo">Contáctanos</h4>
+                <address class="seccion-pie__texto">
+                    <p>Av. Principal #123</p>
+                    <p>Ciudad Palma, 10000</p>
+                    <p>Chile</p>
+                </address>
+            </section>
+            <!-- Sección pie de página de contacto -->
+            <section class="seccion-pie seccion-pie--enlaces">
+                <!-- Enlaces pie de página -->
+                <div class="enlaces-pie">
+                    <!-- Primera columna enlaces -->
+                    <div class="enlaces-pie__columna">
+                        <a href="#" class="enlaces-pie__item">Inicio</a>
+                        <a href="#" class="enlaces-pie__item">Sobre Nosotras</a>
+                        <a href="#" class="enlaces-pie__item">Adopta un Árbol</a>
+                    </div>
+                    <!-- Segunda columna enlaces -->
+                    <div class="enlaces-pie__columna">
+                        <a href="#" class="enlaces-pie__item">Contacto</a>
+                        <a href="#" class="enlaces-pie__item">Patrocinadores</a>
+                        <a href="#" class="enlaces-pie__item">Proyectos</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Sección pie de página de suscríbete -->
+            <section class="seccion-pie">
+                <h4 class="seccion-pie__titulo">Suscríbete</h4>
+                <form class="formulario-suscripcion">
+                    <input type="email" class="formulario-suscripcion__entrada" placeholder="usuario@correo.com">
+                    <button type="submit" class="boton boton--suscribirse formulario-suscripcion__boton">
+                        enviar
+                    </button>
+                </form>
+            </section>
+        </div>
+    </footer>
 
     <!-- Script JS -->
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+:root {
+    /* Colores principales */
+    --verde-suave: #94C37B;
+    --verde-pastel-claro: #B6D8A8;
+    --verde-pastel-medio: #7BA166;
+    --verde-hoja: #68A84E;
+    --verde-bosque-oscuro: #274E11;
+    --verde-brillante: #009E13;
+    --gris-claro: #EEE;
+    --negro: #000;
+    --blanco: #FFF;
+    
+    /* Colores de fondo */
+    --color-fondo-pagina: var(--blanco);
+    --color-fondo-tarjeta: var(--gris-claro);
+    --color-fondo-barra-superior: var(--verde-suave);
+    --color-fondo-seccion-pie: var(--verde-pastel-medio);
+    /* Colores de texto */
+    --color-texto-adopta: var(--verde-brillante);
+    --color-texto-tu: var(--verde-pastel-claro);
+    --color-texto-arbol: var(--verde-suave);
+    --color-texto-pie-titulo: var(--blanco);
+    --color-texto-general: var(--negro);
+    /* Colores de botones */
+    --color-boton-adoptar: var(--verde-pastel-claro);
+    --color-boton-donar: var(--verde-hoja);
+    --color-boton-adoptado: var(--verde-bosque-oscuro);
+    --color-boton-enviar: var(--verde-brillante);
+}
