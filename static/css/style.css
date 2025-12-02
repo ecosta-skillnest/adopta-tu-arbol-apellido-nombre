@@ -16,21 +16,223 @@
     --gris-claro: #EEE;
     --negro: #000;
     --blanco: #FFF;
-    
-    /* Colores de fondo */
-    --color-fondo-pagina: var(--blanco);
-    --color-fondo-tarjeta: var(--gris-claro);
-    --color-fondo-barra-superior: var(--verde-suave);
-    --color-fondo-seccion-pie: var(--verde-pastel-medio);
-    /* Colores de texto */
-    --color-texto-adopta: var(--verde-brillante);
-    --color-texto-tu: var(--verde-pastel-claro);
-    --color-texto-arbol: var(--verde-suave);
-    --color-texto-pie-titulo: var(--blanco);
-    --color-texto-general: var(--negro);
-    /* Colores de botones */
-    --color-boton-adoptar: var(--verde-pastel-claro);
-    --color-boton-donar: var(--verde-hoja);
-    --color-boton-adoptado: var(--verde-bosque-oscuro);
-    --color-boton-enviar: var(--verde-brillante);
+}
+
+/* Estilos generales */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--blanco);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.boton {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Cabecera superior */
+.barra-superior {
+    background-color: var(--verde-suave);
+    padding: 16px 0;
+}
+
+/* Texto barra superior */
+.barra-superior p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.encabezado-principal {
+    background-color: var(--blanco);
+}
+
+.encabezado-principal-contenido {
+    height: 80px;
+    border-bottom: 2px solid var(--negro);
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo del sitio */
+.logo-enlace {
+    text-decoration: none;
+    /* Anular el espacio en blanco entre palabras */
+    font-size: 0;
+}
+
+/* Texto logo */
+.logo-enlace span {
+    /* Restablecer el tamaño de fuente */
+    font-size: 32px;
+}
+
+/* Texto logo adopta */
+.logo-texto-adopta {
+    color: var(--verde-brillante);
+}
+
+/* Texto logo tu */
+.logo-texto-tu {
+    color: var(--verde-pastel-claro);
+}
+
+/* Texto logo árbol */
+.logo-texto-arbol {
+    color: var(--verde-suave);
+}
+
+.encabezado-principal-botones {
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.encabezado-boton-adoptar {
+    background-color: var(--verde-pastel-claro);
+    color: var(--negro);
+    font-size: 20px;
+    padding: 6px 20px;
+}
+
+.encabezado-boton-donar {
+    background-color: var(--verde-hoja);
+    color: var(--negro);
+    font-size: 20px;
+    padding: 6px 20px;
+}
+
+.contenido-principal {
+    background-color: var(--blanco);
+    margin-bottom: 40px;
+}
+
+/* Barra de filtros */
+.barra-filtros {
+    padding: 16px 0;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Barra de filtros para el texto */
+.barra-filtros h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Barra de filtros para el selector */
+.barra-filtros select {
+    padding: 2px 10px;
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+}
+
+.seccion-arboles {
+    margin: 20px 0;
+}
+
+.seccion-arboles-fila {
+    margin-bottom: 20px;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.tarjeta-arbol {
+    background-color: var(--gris-claro);
+    padding: 20px;
+    border-radius: 12px;
+    /* Flexbox */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.tarjeta-arbol img {
+    width: 200px;
+}
+
+.tarjeta-arbol button {
+    padding: 6px 14px;
+    font-size: 16px;
+    background-color: var(--verde-pastel-claro);
+}
+
+.tarjeta-arbol button:hover {
+    background-color: var(--verde-pastel-medio);
+    color: var(--blanco);
+}
+
+.pie-pagina {
+    background-color: var(--verde-pastel-medio);
+}
+
+.pie-pagina-contenido {
+    padding: 40px 0;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.seccion-pie h4 {
+    color: var(--blanco);
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+.seccion-pie address {
+    font-style: normal;
+}
+
+.enlaces-pie {
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.enlaces-pie-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.enlaces-pie-columna a {
+    color: var(--negro);
+    text-decoration: none;
+}
+
+.formulario-suscripcion {
+    display: flex;
+}
+
+.formulario-suscripcion input {
+    padding: 6px 12px;
+    border: 1px solid var(--gris-claro);
+}
+
+.formulario-suscripcion input:focus {
+    outline: none;
+}
+
+.formulario-suscripcion button {
+    background-color: var(--verde-bosque-oscuro);
+    color: var(--blanco);
+    padding: 6px 12px;
 }

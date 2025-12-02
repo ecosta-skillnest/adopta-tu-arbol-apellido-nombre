@@ -13,6 +13,10 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="static/css/style.css">
     <!-- Fuente utilizada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,18 +28,20 @@
     <!-- Encabezado principal -->
     <header class="encabezado-principal">
         <!-- Contenedor encabezado principal interno -->
-        <div class="contenedor encabezado-principal__interno">
+        <div class="contenedor encabezado-principal-contenido">
             <!-- Logo del sitio -->
-            <h1 class="logo">
-                <span class="logo__texto logo__texto--adopta">Adopta</span>
-                <span class="logo__texto logo__texto--tu">Tu</span>
-                <span class="logo__texto logo__texto--arbol">Árbol</span>
+            <h1>
+                <a href="#" class="logo-enlace">
+                    <span class="logo-texto-adopta">Adopta</span>
+                    <span class="logo-texto-tu">Tu</span>
+                    <span class="logo-texto-arbol">Árbol</span>
+                </a>
             </h1>
-            <!-- Navegación acciones -->
-            <nav class="encabezado-principal__acciones">
-                <button class="boton boton--adoptar">Adoptar</button>
-                <button class="boton boton--donar">Donar</button>
-            </nav>
+            <!-- Botones de acciones -->
+            <div class="encabezado-principal-botones">
+                <button class="boton encabezado-boton-adoptar">Adoptar</button>
+                <button class="boton encabezado-boton-donar">Donar</button>
+            </div>
         </div>
     </header>
 
@@ -45,12 +51,12 @@
         <div class="contenedor">
             <section class="barra-filtros">
                 <!-- Texto de filtros -->
-                <h2 class="barra-filtros__texto">
-                    Mostrando: <span class="barra-filtros__categoria">Todos los Árboles</span>
+                <h2>
+                    Mostrando: <span>Todos los Árboles</span>
                 </h2>
                 <!-- Formulario de filtros -->
-                <form class="barra-filtros__formulario">
-                    <select class="barra-filtros__selector" id="categoria" name="categoria">
+                <form>
+                    <select id="categoria" name="categoria">
                         <option value="todos">Todos los Árboles</option>
                         <option value="frutales">Árboles Frutales</option>
                         <option value="ornamentales">Árboles Ornamentales</option>
@@ -61,57 +67,47 @@
 
             <!-- Sección de tarjetas de árboles -->
             <section class="seccion-arboles">
-                <!-- Tarjeta árbol 1 -->
-                <div class="tarjeta-arbol">
-                    <img src="static/images/alamo.jpg" alt="Álamo" class="tarjeta-arbol__imagen">
-                    <div class="tarjeta-arbol__contenido">
-                        <h3 class="tarjeta-arbol__titulo">Álamo</h3>
-                        <p class="tarjeta-arbol__descripcion">
-                            Árbol caducifolio, de hojas anchas y con largos pecíolos.
-                        </p>
+                <!-- Fila de 2 tarjetas -->
+                <div class="seccion-arboles-fila">
+                    <!-- Tarjeta árbol 1 -->
+                    <div class="tarjeta-arbol">
+                        <img src="static/images/alamo.jpg" alt="Álamo" class="tarjeta-arbol-imagen">
+                        <div>
+                            <h3>Álamo</h3>
+                            <p>Árbol caducifolio, de hojas anchas y con largos pecíolos.</p>
+                        </div>
+                        <button class="boton">Adoptar</button>
                     </div>
-                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
-                        Adoptar
-                    </button>
+                    <!-- Tarjeta árbol 2 -->
+                    <div class="tarjeta-arbol">
+                        <img src="static/images/fresno.jpg" alt="Fresno">
+                        <div>
+                            <h3>Fresno</h3>
+                            <p>Árbol con tronco recto y cilíndrico, con amplia copa.</p>
+                        </div>
+                        <button class="boton">Adoptar</button>
+                    </div>
                 </div>
-                <!-- Tarjeta árbol 2 -->
-                <div class="tarjeta-arbol">
-                    <img src="static/images/fresno.jpg" alt="Fresno" class="tarjeta-arbol__imagen">
-                    <div class="tarjeta-arbol__contenido">
-                        <h3 class="tarjeta-arbol__titulo">Fresno</h3>
-                        <p class="tarjeta-arbol__descripcion">
-                            Árbol con tronco recto y cilíndrico, con amplia copa.
-                        </p>
+                <!-- Fila 2 tarjetas -->
+                <div class="seccion-arboles-fila">
+                    <!-- Tarjeta árbol 3 -->
+                    <div class="tarjeta-arbol">
+                        <img src="static/images/pino.jpg" alt="Pino">
+                        <div>
+                            <h3>Pino</h3>
+                            <p>Árbol de la familia de las abietáceas, de tronco elevado, recto.</p>
+                        </div>
+                        <button class="boton">Adoptar</button>
                     </div>
-                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
-                        Adoptar
-                    </button>
-                </div>
-                <!-- Tarjeta árbol 3 -->
-                <div class="tarjeta-arbol">
-                    <img src="static/images/pino.jpg" alt="Pino" class="tarjeta-arbol__imagen">
-                    <div class="tarjeta-arbol__contenido">
-                        <h3 class="tarjeta-arbol__titulo">Pino</h3>
-                        <p class="tarjeta-arbol__descripcion">
-                            Árbol de la familia de las abietáceas, de tronco elevado, recto.
-                        </p>
+                    <!-- Tarjeta árbol 4 -->
+                    <div class="tarjeta-arbol">
+                        <img src="static/images/jacaranda.jpg" alt="Jacaranda">
+                        <div>
+                            <h3>Jacaranda</h3>
+                            <p>Árbol de copa extendida y redondeada con flores moradas.</p>
+                        </div>
+                        <button class="boton">Adoptar</button>
                     </div>
-                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
-                        Adoptar
-                    </button>
-                </div>
-                <!-- Tarjeta árbol 4 -->
-                <div class="tarjeta-arbol">
-                    <img src="static/images/jacaranda.jpg" alt="Jacaranda" class="tarjeta-arbol__imagen">
-                    <div class="tarjeta-arbol__contenido">
-                        <h3 class="tarjeta-arbol__titulo">Jacaranda</h3>
-                        <p class="tarjeta-arbol__descripcion">
-                            Árbol de copa extendida y redondeada con flores moradas.
-                        </p>
-                    </div>
-                    <button class="boton boton--adoptar tarjeta-arbol__boton-adoptar">
-                        Adoptar
-                    </button>
                 </div>
             </section>
         </div>
@@ -120,40 +116,40 @@
     <!-- Pie de página -->
     <footer class="pie-pagina">
         <!-- Contenedor pie de página -->
-        <div class="contenedor pie-pagina__interno">
+        <div class="contenedor pie-pagina-contenido">
             <!-- Sección pie de página de la dirección -->
             <section class="seccion-pie">
-                <h4 class="seccion-pie__titulo">Contáctanos</h4>
-                <address class="seccion-pie__texto">
+                <h4>Contáctanos</h4>
+                <address>
                     <p>Av. Principal #123</p>
                     <p>Ciudad Palma, 10000</p>
                     <p>Chile</p>
                 </address>
             </section>
             <!-- Sección pie de página de contacto -->
-            <section class="seccion-pie seccion-pie--enlaces">
+            <section class="seccion-pie">
                 <!-- Enlaces pie de página -->
                 <div class="enlaces-pie">
                     <!-- Primera columna enlaces -->
-                    <div class="enlaces-pie__columna">
-                        <a href="#" class="enlaces-pie__item">Inicio</a>
-                        <a href="#" class="enlaces-pie__item">Sobre Nosotras</a>
-                        <a href="#" class="enlaces-pie__item">Adopta un Árbol</a>
+                    <div class="enlaces-pie-columna">
+                        <a href="#">Inicio</a>
+                        <a href="#">Sobre Nosotras</a>
+                        <a href="#">Adopta un Árbol</a>
                     </div>
                     <!-- Segunda columna enlaces -->
-                    <div class="enlaces-pie__columna">
-                        <a href="#" class="enlaces-pie__item">Contacto</a>
-                        <a href="#" class="enlaces-pie__item">Patrocinadores</a>
-                        <a href="#" class="enlaces-pie__item">Proyectos</a>
+                    <div class="enlaces-pie-columna">
+                        <a href="#">Contacto</a>
+                        <a href="#">Patrocinadores</a>
+                        <a href="#">Proyectos</a>
                     </div>
                 </div>
             </section>
             <!-- Sección pie de página de suscríbete -->
             <section class="seccion-pie">
-                <h4 class="seccion-pie__titulo">Suscríbete</h4>
+                <h4>Suscríbete</h4>
                 <form class="formulario-suscripcion">
-                    <input type="email" class="formulario-suscripcion__entrada" placeholder="usuario@correo.com">
-                    <button type="submit" class="boton boton--suscribirse formulario-suscripcion__boton">
+                    <input type="email" placeholder="usuario@correo.com">
+                    <button type="submit" class="boton">
                         enviar
                     </button>
                 </form>
